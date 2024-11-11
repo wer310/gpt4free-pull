@@ -16,7 +16,7 @@ class PollinationsAI(Openai):
     "gpt-4o-mini": "openai"
   }
   @classmethod
-    async def create_async_generator(
+  async def create_async_generator(
         cls,
         **kwargs
     ) -> AsyncResult:
