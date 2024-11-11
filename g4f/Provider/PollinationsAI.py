@@ -21,5 +21,5 @@ class PollinationsAI(Openai):
         **kwargs
     ) -> AsyncResult:
       kwargs["api_key"] = _secrets.token_hex(16)
-      kwargs["base_url"] = "https://text.pollinations.ai/openai"
+      kwargs["api_base"] = "https://text.pollinations.ai/openai"
       return await super().create_async_generator(cls, **kwargs)
