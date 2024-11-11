@@ -1,4 +1,4 @@
-from .needs_auth.Openai import AsyncResult
+from .needs_auth.Openai import AsyncResult, Openai
 import requests as _requests
 import secrets as _secrets
 
